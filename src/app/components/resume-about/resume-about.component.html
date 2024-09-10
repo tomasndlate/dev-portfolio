@@ -1,0 +1,9 @@
+<header class="about_header">
+  <h2>{{ about.title }}</h2>
+</header>
+
+<article class="about_article">
+  <ng-container *ngFor="let paragraph of about.description">
+    <p class="about_article_paragraph" [innerHTML]="paragraph"></p>
+  </ng-container>
+</article>

@@ -1,0 +1,9 @@
+<header class="section_header">
+  <h2>{{ section.title }}</h2>
+</header>
+
+<article class="section_article">
+  <ng-container *ngFor="let section of section.topics">
+    <app-resume-section-topic [sectionTopic]="section"></app-resume-section-topic>
+  </ng-container>
+</article>

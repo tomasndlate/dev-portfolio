@@ -1,0 +1,47 @@
+:host {
+  position: relative;
+  width: var(--width-md);
+  margin: auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: green; */
+}
+
+.projects_header {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects_header h2 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  background-color: var(--color-background-third);
+  padding: 8px 22px;
+  border-radius: 50px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.projects_header h3 {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.projects_header p {
+  font-size: var(--font-size-md);
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  width: min(800px, 100%);
+  text-align: center;
+  line-height: var(--line-height-md);
+}

@@ -1,0 +1,26 @@
+<section class="topic_dates">
+  <p>{{ sectionTopic.startDate }}</p>
+  <p *ngIf="sectionTopic.endDate">-</p>
+  <p *ngIf="sectionTopic.endDate">{{ sectionTopic.endDate }}</p>
+</section>
+
+<section class="topic_details">
+  <!-- Long dash -->
+  <header class="topic_details_header">
+    <h3> {{ sectionTopic.name }} </h3>
+    <h3 *ngIf="sectionTopic.institution.name"> &mdash; </h3>
+    <h3> {{ sectionTopic.institution.name }} </h3>
+  </header>
+
+  <article *ngIf="sectionTopic.description || sectionTopic.skills.length > 0" class="topic_details_article">
+    <p *ngIf="sectionTopic.description" class="topic_details_article_description">{{ sectionTopic.description }}</p>
+    <div *ngIf="sectionTopic.skills.length > 0" class="topic_details_article_skills">
+      <ng-container *ngFor="let skill of sectionTopic.skills; first as isFirst">
+        <!-- Bullet point -->
+        <p *ngIf="!isFirst">&#8226;</p>
+        <p>{{ skill }}</p>
+      </ng-container>
+    </div>
+  </article>
+
+</section>

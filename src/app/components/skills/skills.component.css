@@ -1,0 +1,104 @@
+:host {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: green; */
+}
+
+.skills_header {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.skills_header h2 {
+  position: relative;
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  background-color: var(--color-background-third);
+  padding: 8px 22px;
+  border-radius: 50px;
+  /* color: var(--color-text-third); */
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.skills_article {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  animation: slide-animation 100s infinite linear;
+}
+
+.carousel.reverse {
+  animation: slide-animation-reverse 100s infinite linear;
+}
+
+.carousel_element {
+  flex: 0 0 auto;
+  position: relative;
+  width: 2000px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel.reverse .carousel_element {
+  flex-direction: row-reverse;
+}
+
+.carousel_element_image {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 50px 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.carousel_element_image img {
+  height: 100%;
+  width: auto;
+  /* filter: invert(100%); */
+}
+
+.carousel_element_image {
+  font-size: var(--font-size-sm);
+}
+
+@keyframes slide-animation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+@keyframes slide-animation-reverse {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,22 @@
+<header class="profile_header">
+  <h1>{{ profile.name }},</h1>
+</header>
+
+<article class="profile_article">
+  <div class="profile_article_image">
+    <img [src]="profile.imagePath" alt="Profile image">
+  </div>
+  <div class="profile_article_text">
+    <h3>{{ profile.role }}</h3>
+    <p>{{ profile.headline }}</p>
+  </div>
+</article>
+
+<footer class="profile_footer">
+  <a [href]="profile.socialMedia.githubUrl" target="_blank">
+    <i class="bi bi-github"></i>
+  </a>
+  <a [href]="profile.socialMedia.linkedinUrl" target="_blank">
+    <i class="bi bi-linkedin"></i>
+  </a>
+</footer>

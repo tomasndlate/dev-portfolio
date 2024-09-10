@@ -1,0 +1,24 @@
+:host {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about_header h2 {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+}
+
+.about_article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about_article_paragraph {
+  line-height: var(--line-height-md);
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+}

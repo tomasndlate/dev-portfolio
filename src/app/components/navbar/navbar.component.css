@@ -1,0 +1,40 @@
+.navbar {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_logo {
+  position: relative;
+  height: 30px;
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.navbar_logo img {
+  position: relative;
+  height: 100%;
+  width: auto;
+}
+
+.navbar_buttons {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar_buttons button {
+  font-size: var(--font-size-md);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}

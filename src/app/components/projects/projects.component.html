@@ -1,0 +1,11 @@
+<header class="projects_header">
+  <h2>{{ projects.title }}</h2>
+  <h3>{{ projects.subtitle }}</h3>
+  <p>{{ projects.description }}</p>
+</header>
+
+<article class="projects_article">
+  <ng-container *ngFor="let project of projects.elements">
+    <app-project [project]="project"></app-project>
+  </ng-container>
+</article>

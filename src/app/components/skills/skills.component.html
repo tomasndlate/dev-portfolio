@@ -1,0 +1,46 @@
+<header class="skills_header">
+  <h2>{{ skills.title }}</h2>
+</header>
+
+<article class="skills_article">
+
+  <div class="carousel">
+    <div class="carousel_element">
+      <ng-container *ngFor="let skill of skills.elements">
+        <div class="carousel_element_image">
+          <img [src]="skill.imagePath" [alt]="skill.name">
+          <p>{{ skill.name }}</p>
+        </div>
+      </ng-container>
+    </div>
+    <div class="carousel_element">
+      <ng-container *ngFor="let skill of skills.elements">
+        <div class="carousel_element_image">
+          <img [src]="skill.imagePath" [alt]="skill.name">
+          <p>{{ skill.name }}</p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="carousel reverse">
+    <div class="carousel_element">
+      <ng-container *ngFor="let skill of skills.elements">
+        <div class="carousel_element_image">
+          <img [src]="skill.imagePath" [alt]="skill.name">
+          <p>{{ skill.name }}</p>
+        </div>
+      </ng-container>
+    </div>
+    <div class="carousel_element">
+      <ng-container *ngFor="let skill of skills.elements">
+        <div class="carousel_element_image">
+          <img [src]="skill.imagePath" [alt]="skill.name">
+          <p>{{ skill.name }}</p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+</article>
+

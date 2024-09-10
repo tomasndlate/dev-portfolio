@@ -1,0 +1,70 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* background-color: pink; */
+}
+
+.background-secondary {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  color: var(--color-text-primary);
+  padding: 80px 0;
+}
+
+.background-secondary {
+  background-color: var(--color-background-secondary);
+}
+
+header {
+  position: relative;
+  width: var(--width-md);
+  height: fit-content;
+  margin: auto;
+  /* background-color: pink; */
+}
+
+
+.resume {
+  position: relative;
+  width: var(--width-md);
+  height: fit-content;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 25px;
+}
+
+.resume_profile {
+  position: sticky;
+  width: 100%;
+  height: fit-content;
+  top: 50px;
+  /* display: ; */
+}
+
+.resume_details {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.skills {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+
+.projects {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
