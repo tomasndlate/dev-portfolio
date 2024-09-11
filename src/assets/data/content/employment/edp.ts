@@ -4,7 +4,7 @@ export const EDP: IResumeSectionTopic = {
   name: "Summer Intern",
   institution: {
     name: "EDP",
-    link: ""
+    link: "https://www.linkedin.com/company/edp/"
   },
   startDate: "Jul 2022",
   endDate: "Aug 2022",

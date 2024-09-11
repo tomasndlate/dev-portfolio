@@ -20,7 +20,7 @@ a {
 
 :root {
   /* DISPLAY SIZES */
-  --width-md: min(calc(100% - 20px), 1200px);
+  --width-md: min(calc(100% - 35px), 1200px);
   /* --width-lg: 100%; */
 
   /* Colors */
@@ -42,14 +42,18 @@ a {
   --line-height-md: 35px;
   --line-height-lg: 40px;
 }
-
+html {
+  /* background-color: red; */
+  background: #0b0c0c;
+}
 body {
-  position: relative;
-  padding: 40px 0;
-  /* background-color: var(--color-background-primary); */
+  /* position: fixed; */
+  width: 100%;
+  padding: 20px 0;
+  height: fit-content;
+  background-color: var(--color-background-primary);
   background: linear-gradient(to top right, #111, #001c15);
   color: var(--color-text-primary);
-  height: fit-content;
 }
 
 body::before {

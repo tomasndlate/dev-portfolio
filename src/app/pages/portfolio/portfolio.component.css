@@ -18,7 +18,14 @@
 }
 
 .background-secondary {
-  background-color: var(--color-background-secondary);
+  /* background-color: var(--color-background-secondary); */
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 6, 6, 1),
+    rgba(6, 6, 6, 1),
+    rgba(6, 6, 6, 1),
+    rgba(6, 6, 6, 0)
+  );
 }
 
 header {
@@ -37,8 +44,9 @@ header {
   margin: auto;
   display: grid;
   grid-template-columns: 450px 1fr;
-  gap: 25px;
+  gap: 35px;
 }
+
 
 .resume_profile {
   position: sticky;
@@ -67,4 +75,25 @@ header {
   position: relative;
   width: 100%;
   height: fit-content;
+}
+
+.footer {
+  position: relative;
+  width: var(--width-md);
+  height: fit-content;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .resume {
+    grid-template-columns: 1fr;
+  }
+
+  .resume_profile {
+    position: relative;
+    /* width: 100%;
+    height: fit-content; */
+    top: 0;
+    /* display: ; */
+  }
 }

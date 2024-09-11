@@ -28,7 +28,7 @@
   padding: 8px 22px;
   border-radius: 50px;
   font-weight: 300;
-  text-transform: uppercase;
+  /* text-transform: uppercase;  */
 }
 
 .projects_header h3 {
@@ -44,4 +44,11 @@
   width: min(800px, 100%);
   text-align: center;
   line-height: var(--line-height-md);
+}
+
+.projects_article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }

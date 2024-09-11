@@ -1,6 +1,8 @@
 <!-- <div class="background-primary"> -->
 <header>
-  <app-navbar></app-navbar>
+  <app-navbar
+    (navigateToProjects)="scrollToProjects()"
+  ></app-navbar>
 </header>
 
 <section class="resume">
@@ -10,9 +12,9 @@
     <app-profile [profile]="portfolioData.profile"></app-profile>
   </aside>
 
-  <article class="resume_details">
+  <article class="resume_details" #resumeSection>
     <!-- ABOUT -->
-    <app-resume-about [about]="portfolioData.about" ></app-resume-about>
+    <app-resume-about [about]="portfolioData.about"></app-resume-about>
     <!-- EMPLOYMENT -->
     <app-resume-section [section]="portfolioData.employment"></app-resume-section>
     <!-- EDUCATION -->
@@ -30,8 +32,17 @@
     <app-skills [skills]="portfolioData.skills"></app-skills>
   </section>
 
-  <section class="projects">
+  <section class="projects" #projectsSection>
     <!-- PROJECTS -->
     <app-projects [projects]="portfolioData.projects"></app-projects>
   </section>
 </div>
+
+<section class="footer">
+  <app-footer
+    [devName]="portfolioData.profile.name"
+    [linkedinUrl]="portfolioData.profile.socialMedia.linkedinUrl"
+    [githubUrl]="portfolioData.profile.socialMedia.githubUrl"
+    [location]="'Dublin, Ireland'"
+  ></app-footer>
+</section>

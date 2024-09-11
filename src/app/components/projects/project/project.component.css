@@ -1,0 +1,132 @@
+:host {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 15px;
+}
+
+.project-details {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-details_header,
+.project-details_header_responsive {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project-details_header h4,
+.project-details_header_responsive h4 {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: 300;
+}
+
+.project-details_header h3,
+.project-details_header_responsive h3 {
+  font-size: var(--font-size-lg);
+}
+
+.project-details_header_responsive {
+  display: none;
+}
+
+
+.project-details_article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-details_article_description {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  /* border: 1px solid rgba(14, 121, 69, 0.3); */
+  background-color: #ffffff24;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+}
+
+.project-details_article_description p {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-sm);
+  font-weight: 300;
+}
+
+.project-details_article_skills p {
+  position: relative;
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-right: 5px;
+}
+
+.project-details_footer {
+  position: relative;
+  display: flex;
+  gap: 15px;
+}
+
+.project-details_footer > a > i {
+  font-size: var(--font-size-lg);
+}
+
+.icon-extra-fill {
+  -webkit-text-stroke: .6px;
+}
+
+
+.project-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.project-image img {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  :host {
+    grid-template-columns: 1fr;
+  }
+
+  .project-details_header_responsive {
+    display: flex;
+  }
+
+  .project-details_header {
+    display: none;
+  }
+
+  .project-image {
+    grid-row: 2;
+  }
+}

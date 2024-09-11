@@ -8,8 +8,14 @@
   <!-- Long dash -->
   <header class="topic_details_header">
     <h3> {{ sectionTopic.name }} </h3>
-    <h3 *ngIf="sectionTopic.institution.name"> &mdash; </h3>
-    <h3> {{ sectionTopic.institution.name }} </h3>
+    <span *ngIf="sectionTopic.institution.name" class="topic_details_header_connector"> &mdash; </span>
+    <h3>
+      {{ sectionTopic.institution.name }}
+      <a [href]="sectionTopic.institution.link" target="_blank">
+        <!-- <i class="bi bi-arrow-up-right"></i> -->
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </h3>
   </header>
 
   <article *ngIf="sectionTopic.description || sectionTopic.skills.length > 0" class="topic_details_article">

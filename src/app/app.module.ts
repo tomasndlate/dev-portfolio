@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routes';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectComponent } from './components/projects/project/project.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProjectComponent } from './components/projects/project/project.componen
     SkillsComponent,
     PortfolioComponent,
     ProjectsComponent,
-    ProjectComponent
+    ProjectComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

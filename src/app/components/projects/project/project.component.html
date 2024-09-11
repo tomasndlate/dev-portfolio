@@ -1,21 +1,31 @@
-<section>
-  <header>
+<header class="project-details_header_responsive">
+  <h4>{{ project.subtitle }}</h4>
+  <h3>{{ project.title }}</h3>
+</header>
+
+<section class="project-details">
+  <header class="project-details_header">
     <h4>{{ project.subtitle }}</h4>
     <h3>{{ project.title }}</h3>
   </header>
-  <article>
-    <p>{{ project.description }}</p>
-  </article>
-  <footer>
-    <div>
+  <article class="project-details_article">
+    <div class="project-details_article_description">
+      <p>{{ project.description }}</p>
+    </div>
+    <div class="project-details_article_skills">
       <p>{{ project.skills[0] }}</p>
     </div>
-    <div>
-      <a href=""></a>
-    </div>
+  </article>
+  <footer class="project-details_footer">
+      <a [href]="project.githubUrl" target="_blank">
+        <i class="bi bi-github"></i>
+      </a>
+      <a [href]="project.demoUrl" target="_blank">
+        <i class="bi bi-box-arrow-up-right icon-extra-fill"></i>
+      </a>
   </footer>
 </section>
 
-<section>
-  <img src="" alt="">
+<section class="project-image">
+  <img [src]="project.imagePath" [alt]="project.title + ' demo image'">
 </section>
