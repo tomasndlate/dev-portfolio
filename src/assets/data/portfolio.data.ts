@@ -7,12 +7,12 @@ import { Fidelity } from "./content/employment/fidelity";
 import { ResumeBuilder } from "./content/projects/resume-builder";
 import { ToDoApp } from "./content/projects/to-do-app";
 
-const imagesFolderPath = "/assets/images/skills/";
+const imagesFolderPath = "assets/images/skills/";
 
 export const portfolioData: IPortfolio = {
   profile: {
     name: "Tomás Ndlate",
-    imagePath: "/assets/images/profile-image.jpeg",
+    imagePath: "assets/images/profile-image.jpeg",
     role: "Software Engineer",
     headline: "Exploring the world of AI, Cloud, and Software.",
     socialMedia: {
